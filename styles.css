@@ -1,9 +1,11 @@
+/* Global reset for spacing and box sizing across the page */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base page styling: typography, background and centered layout */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +16,7 @@ body {
     padding: 20px;
 }
 
+/* Horizontal layout that arranges the pricing cards with space between */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@ body {
     align-items: flex-start;
 }
 
+/* Individual pricing card: container box, size, and base background */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +38,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Upper block of each card (title, price, and features) */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan name styling inside each card */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +53,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Container for the price line, aligned visually with the text baseline */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +61,38 @@ body {
     align-items: baseline;
 }
 
+/* Main price amount (e.g. “Free” or “$20”) */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Secondary price label (e.g. “/mo.”) */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Content block that holds the “Includes” label and the feature list */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Supporting text above the list of features */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Unstyled list for plan features (bullets are replaced with icons) */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Each feature line: check icon and description aligned in a row */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +101,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark icon that visually replaces the standard bullet */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +109,7 @@ body {
     font-weight: 400;
 }
 
+/* Shared button style for both primary and secondary CTAs */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,27 +124,33 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Hover state for neutral (secondary) button */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Active state for neutral (secondary) button */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* Primary call‑to‑action styling for the “Get Pro” button */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Hover state for primary button */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Active state for primary button */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* Fixed label at the top of the viewport describing the page variant */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +164,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Stronger emphasis for the “HTML version” text inside the label */
 .page-label strong {
     color: #333;
 }

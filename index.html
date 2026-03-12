@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document setup and global page metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title for the pricing layout -->
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Inter typeface from Google Fonts (used across all text) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main stylesheet that controls layout, spacing, and visual style -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Small fixed label to indicate this is the static HTML version -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Flex container that holds all pricing cards side by side -->
     <div class="cards-container">
+
+        <!-- Hobby tier card: entry‑level, free plan -->
         <div class="card">
+            <!-- Top section of the card: title, price, and feature list -->
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Hobby</h3>
+
+                <!-- Price row (only shows “Free” for this tier) -->
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+
+                <!-- List of what is included in the Hobby plan -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
@@ -36,15 +54,25 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Secondary action button for downloading or starting the free plan -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Pro tier card: paid plan with more features -->
         <div class="card">
+            <!-- Top section of the card: title, price, and extended feature list -->
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Pro</h3>
+
+                <!-- Price row: amount and monthly label -->
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+
+                <!-- Additional benefits that sit on top of the Hobby tier -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -67,8 +95,51 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Primary action button that visually promotes upgrading to Pro -->
             <button class="download-button primary">Get Pro</button>
         </div>
+
+        <!-- Enterprise tier card: highest plan with custom options -->
+        <div class="card">
+            <!-- Top section of the card: title, price, and enterprise‑level feature list -->
+            <div class="card-top">
+                <!-- Plan name -->
+                <h3 class="card-title">Enterprise</h3>
+
+                <!-- Price row: uses “Contact us” instead of a fixed price -->
+                <p class="card-price">
+                    <span class="card-price-amount">Contact us</span>
+                </p>
+
+                <!-- Enterprise benefits that extend beyond Pro -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated account manager
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom usage limits
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support & SLAs
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Security & compliance reviews
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Call‑to‑action focused on starting a conversation with sales -->
+            <button class="download-button primary">Contact sales</button>
+        </div>
+
     </div>
 </body>
 </html>
